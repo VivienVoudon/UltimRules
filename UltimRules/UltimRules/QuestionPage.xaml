@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:UltimRules;assembly=UltimRules"
+             x:Class="UltimRules.QuestionPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="{Binding Question}"
+                     FontSize="Large"
+                     HorizontalOptions="Center"
+                     VerticalOptions="Center">
+            </Label>
+            
+            <Button x:Name="btAnswer" Text="Voir la réponse" 
+                HorizontalOptions="Center"
+                Clicked="OnAnswer" />
+            <Label x:Name="lblAnswer" Text="{Binding Answer}"
+                   IsVisible="False"/>
+
+            <Button x:Name="btNextQuestion" Text="Question suivante" 
+                VerticalOptions="CenterAndExpand"
+                    IsVisible="False"
+                Clicked="OnNextQuestion" />
+            <Button x:Name="btRule" Text="Réglement" 
+                VerticalOptions="CenterAndExpand"
+                    IsVisible="False"
+                Clicked="OnRule" />
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
