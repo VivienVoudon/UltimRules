@@ -5,14 +5,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace UltimRules
+namespace UR.Core
 {
-    public class Question
-    {
-        public string Text { get; set; }
-        public string Answer { get; set; }
-    }
-
     public class UltimRulesGame
     {
         private Queue<Question> Questions { get; set; }
@@ -27,7 +21,7 @@ namespace UltimRules
             Questions.Enqueue(new Question { Text = "Question numero 1", Answer = "reponse 1" });
             Questions.Enqueue(new Question { Text = "Question numero 2", Answer = "reponse 2" });
         }
-        
+
         public void NextQuestion()
         {
             Question question = Questions.Dequeue();

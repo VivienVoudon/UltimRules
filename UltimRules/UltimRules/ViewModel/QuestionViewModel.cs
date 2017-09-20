@@ -4,8 +4,9 @@ using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using UR.Core;
 
-namespace UltimRules
+namespace UltimRules.ViewModel
 {
     public class QuestionViewModel : INotifyPropertyChanged
     {

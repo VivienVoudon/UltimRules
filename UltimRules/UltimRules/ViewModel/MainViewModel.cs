@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 
-namespace UltimRules
+namespace UltimRules.ViewModel
 {
     public class MainViewModel: INotifyPropertyChanged
     {
